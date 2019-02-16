@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />	
+<link href="css/cubeportfolio.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/form.css" rel="stylesheet" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- This is just for development purpose and nothing else -->
+    <!-- <meta http-equiv="refresh" content="60"> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="goodVUD is startup, provides unlimited web solutions web designing, web development, content writing, logo designing, SEO services with commission plans for referrals.">
     <meta name="author" content="goodVUD WEB Solutions">
@@ -22,270 +32,717 @@
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+<!-- Theme skin -->
+<link id="t-colors" href="skins/default.css" rel="stylesheet" />
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
 
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
 </head>
+<body style="">
 
-<body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">goodVUD</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Designs</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="topleft-info">
+								<li><i class="fa fa-phone"></i> +91-7253919169, +91-9660801827</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search" title="Click to start searching"></span>
+							</form>
+						</div>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">You think, we create. With the essence of Innovation</h1>
-                <hr>
-                <p>You can choose from 100s of designs, many backend technologies and much more stuff. Get Website development, Content writing, SEO services all at one place.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-            </div>
-        </div>
-    </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you exactly need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Here at goodVUD, you get many of website designs and choices of Robust backends at a very reasonable prices, no one gonna offer you to make your dream come true.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><img src="img/brand/logo_transparent.png" alt="goodVUD Web" height="52" /><span> <span style="color: teal">|</span> goodVUD web sol. </span></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown active">
+							<a href="#" class="dropdown-toggle " +
+							-------------data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Home </a>
+                        
+						</li>
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="components.html">Components</a></li>
+								<li><a href="pricing-box.html">Pricing box</a></li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown">Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="fullwidth.html">Full width</a></li>
+										<li><a href="right-sidebar.html">Right sidebar</a></li>
+										<li><a href="left-sidebar.html">Left sidebar</a></li>
+										<li><a href="comingsoon.html">Coming soon</a></li>
+										<li><a href="search-result.html">Search result</a></li>
+										<li><a href="404.html">404</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="login.html">Login</a></li>
+									</ul>	
+								</li>
+                            </ul>
+                        </li> -->
+                        <li><a href="portfolio.html">Explore Website designs</a></li>
+                        <li><a href="portfolio.html">About</a></li>
+                        <!-- <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+                                <li><a href="blog-rightsidebar.html">Blog right sidebar</a></li>
+                                <li><a href="blog-leftsidebar.html">Blog left sidebar</a></li>
+								<li><a href="post-rightsidebar.html">Post right sidebar</a></li>
+								<li><a href="post-leftsidebar.html">Post left sidebar</a></li>
+                            </ul>
+						</li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+	</header>
+	<!-- end header -->
+	<section id="featured" class="bg">
+	<!-- start slider -->
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
+			
+	<!-- start slider -->
+	<div class="container" style="padding: 0!important;">
+		<div class="row">
+			<div class="col-md-12" style="padding-left: 0!important; padding-right: 0!important;">
+	<!-- Slider -->
+        <div id="main-slider" class="main-slider flexslider">
+            <ul class="slides">
+              <li>
+                <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" />
+                <div class="flex-caption">
+                    <h3>We think</h3> 
+					<p>We take care of every small detail of the website design to give you best experience.</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
                 </div>
-            </div>
+              </li>
+              <li>
+                <img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                <div class="flex-caption">
+                    <h3>Create and Redesign</h3> 
+					<p>We create and design every part of the code according to your needs. So put what you need and remove what you don't need.</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              <li>
+                <img src="https://images.pexels.com/photos/461073/pexels-photo-461073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                <div class="flex-caption">
+                    <h3>Innovate</h3> 
+					<p>We always work on your website to make it more better and faster and to optimize its performance and looks.</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+            </ul>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+	<!-- end slider -->
+			</div>
+		</div>
+	</div>	
+
+
+	</section>
+	<section class="callaction">
+	<div class="container" style="margin-top: 50px;">
+		<div class="row">
+			<div class="col-md-10">
+				<div class="cta-text">
+					<h2>Want to earn <span>some</span> extra money? Join our <span>Bring and Earn Program</span></h2>
+					<p> You can join our <span>Bring and Earn</span> program and can earn upto INR 1000 per day.</p>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="cta-btn">
+					<a href="#" class="btn btn-theme btn-lg">Learn more <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	</section>
+	
+	<section id="content">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="text-center">
+					<h2>We use <span class="highlight">modern</span> infrastructure & technology</h2>					
+					<p>We believes in Innovation and recreation. That's why we use the best technology available in the market to enhance your productivity and output from your business. Our team always work on updating them according to latest technology and make the web applications fastest, easy to use and more advanced.</p>
+				</div>
+			</div>		
+		</div>
+		</div>
+		
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<a href="#" style="text-decoration: none;">
+								<div class="aligncenter">								
+									<div class="icon">
+									<i class="fa fa-desktop fa-5x"></i>
+									</div>
+									<h4>Fully responsive</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<a href="#" style="text-decoration: none;">
+								<div class="aligncenter">								
+									<div class="icon">
+									<i class="fa fa-file-code-o fa-5x"></i>
+									</div>
+									<h4>Full proof security</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<a href="#" style="text-decoration: none;">
+								<div class="aligncenter">								
+									<div class="icon">
+									<i class="fa fa-paper-plane-o fa-5x"></i>
+									</div>
+									<h4>Easily maintainable</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<a href="#" style="text-decoration: none;">
+								<div class="aligncenter">								
+									<div class="icon">
+									<i class="fa fa-cubes fa-5x"></i>
+									</div>
+									<h4>Easily scalable</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+		
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="blankline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+
+
+		<!-- Portfolio Projects -->
+		<div class="container marginbot50">
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Popular website categories</h4>
+
+				<div id="filters-container" class="cbp-l-filters-button">
+					<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".identity" class="cbp-filter-item">Featured<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".web-design" class="cbp-filter-item">Top rated<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".graphic" class="cbp-filter-item">Economic<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".logo" class="cbp-filter-item">Scalable<div class="cbp-filter-counter"></div></div>
+				</div>
+				
+
+				<div id="grid-container" class="cbp-l-grid-projects">
+					<ul>
+						<li class="cbp-item graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/1.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="img/works/1big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Business">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Business</div>
+							<div class="cbp-l-grid-projects-desc">From INR 2000</div>
+						</li>
+						<li class="cbp-item web-design logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/2.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="img/works/2big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ecommerce Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Ecommerce Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1500</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/3.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="#" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Company Dashboards">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Company Dashboards</div>
+							<div class="cbp-l-grid-projects-desc">From INR 3500</div>
+						</li>
+						<li class="cbp-item web-design graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/4.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/4big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Educational Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Educational Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1800</div>
+						</li>
+						<li class="cbp-item identity web-design">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/5.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											
+											<a href="img/works/5big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Portfolio websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Portfolio websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1800</div>
+						</li>
+						<li class="cbp-item identity web-design">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/6.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											
+											<a href="img/works/6big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Photography Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Photography Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1800</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/7.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/7big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Media and Entertainment Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Media and Entertainment Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 2500</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Blogs and News Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Blogs and News Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1200</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Wordpress Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Wordpress Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1200</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Blogger Websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Blogger Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 700</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Wix websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Wix Websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 900</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Landing Pages">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Landing pages</div>
+							<div class="cbp-l-grid-projects-desc">From INR 1500</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Advanced Feature Websites (Designed in JS Frameworks)">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Advance feature websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 5500</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Social Media websites">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Social Media websites</div>
+							<div class="cbp-l-grid-projects-desc">From INR 6200</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="cbp-l-loadMore-button" style="display: none;">
+					<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
+				</div>
+
+			</div>
+		</div>
+		</div>
+			
+	<!-- parallax  -->
+	<div id="parallax1" class="parallax text-light text-center marginbot50" data-stellar-background-ratio="0.5" style="margin-top: 100px;">	
+           <div class="container">
+				<div class="row appear stats">
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center color-white txt-shadow">
+							<div class="icon">
+								<i class="fa fa-clock-o fa-5x"></i>
+							</div>
+						<strong id="counter-coffee" class="number">62</strong><br />
+						<span class="text">Minutes</span>
+						<h3>Record breaking delivery</h3>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center color-white txt-shadow">
+							<div class="icon">
+								<i class="fa fa-facebook-square fa-5x"></i>
+							</div>
+						<strong id="counter-music" class="number">6</strong><br />
+						<span class="text">5x Growth</span>
+						<h3>Leaders in Social media management </h3>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center color-white txt-shadow">
+							<div class="icon">
+								<i class="fa fa-coffee fa-5x"></i>
+							</div>
+						<strong id="counter-clock" class="number">7</strong><br />
+						<span class="text">Experience</span>
+						<h3>Worked with many of reputed national or international firms.</h3>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center color-white txt-shadow">
+							<div class="icon">
+								<i class="fa fa-trophy fa-5x"></i>
+							</div>
+						<strong id="counter-heart" class="number">5</strong><br />
+						<span class="text">Award Winning Team</span>
+						<h3>Our team is extremely dedicated and talented</h3>
+						</div>
+					</div>
+				</div>
+            </div>
+	</div>	 
+	
+		
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	
+		<form role="form" class="register-form" action="https://formspree.io/kumarmanojtyagi2000@gmail.com" method="POST" >
+			<h2>Contact us <small>get in touch with us by filling form below</small></h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+                        <input type="text" name="first_name" id="first_name" class="form-control input-md" placeholder="First Name" tabindex="1">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="text" name="last_name" id="last_name" class="form-control input-md" placeholder="Last Name" tabindex="2">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="text" name="email" id="email" class="form-control input-md" placeholder="Email" tabindex="2">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" rows="8" placeholder="* Your comment here"></textarea>
+			</div>
+
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-4"><input type="submit" value="Submit message" class="btn btn-theme btn-block btn-md" tabindex="7"></div>
+				<div class="col-xs-12 col-md-8">* Please fill all required form field, thanks!</div>
+			</div>
+		</form>
+
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Get in touch with us</h4>
+					<address>
+					<strong>goodVUD Web Solutions</strong><br>
+					 Srinagar Garhwal, Dist- Pauri Grahwal, Uttrakhand, India - 246174 </address>
+					<p>
+						<i class="icon-phone"></i> +91-7253919169 - +91-9660801827 <br>
+						<a href="mailto:kumarmanojtyagi2000@gmail.com"><i class="icon-envelope-alt"></i> kuamrmanojtyagi2000@gmail.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Information</h4>
+					<ul class="link-list">
+						<li><a href="#">Website designs</a></li>
+						<li><a href="#">Logo designing</a></li>
+						<li><a href="#">Content Writing</a></li>
+						<li><a href="#">Robust backends and Dynamic websites</a></li>
+						<li><a href="#">SEO Services</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Pages</h4>
+					<ul class="link-list">
+						<li><a href="#">Bring and Earn</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Explore Backend technologies</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Newsletter</h4>
+					<p>Fill your email and sign up for monthly newsletter to keep updated and get amazing deals and offers.</p>
+                    <div class="form-group multiple-form-group input-group">
+                        <input type="email" name="email" class="form-control disabled">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-theme btn-add disabled">Subscribe</button>
+                        </span>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Easily customizable</h3>
-                        <p class="text-muted">We will customize the designs completely according to your needs.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date Technologies</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">We write, make and innovate with love and dream in heart.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; 2019	 <a href="https://goodvud.com/">goodVUD Web Solutions</a> | All right reserved.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/goodvud/" data-placement="top" title="Facebook"><i class="fa fa-facebook-square" style="font-size: 32px; color: midnightblue;"></i></a></li>
+						<li><a href="https://www.twitter.com/" data-placement="top" title="Twitter"><i class="fa fa-twitter" style="font-size: 32px; color: skyblue;"></i></a></li>
+						<li><a href="https://www.linkedin.com/" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" style="font-size: 32px; color: blue;"></i></a></li>
+						<li><a href="https://www.pinterest.com/" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" style="font-size: 32px; color: maroon;"></i></a></li>
+						<li><a href="mailto:kumarmanojtyagi2000@gmail.com" data-placement="top" title="Google plus"><i class="fa fa-google-plus" style="font-size: 32px; color: orangered;"></i></a></li>
+						<li><a href="https://www.instagram.com/goodvud.web_solutions/" data-placement="top" title="Instagram" target="_blank"><i class="fa fa-instagram" style="font-size: 32px; color: #fb3958;"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <center><h1 style="margin-bottom: 25px;">Popular Website categories</h1></center>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Ecom-VUD
-                                </div>
-                                <div class="project-name">
-                                    Simple and amazing websites with ecommerce functionalities
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Business-VUD
-                                </div>
-                                <div class="project-name">
-                                    Powerful business websites with custom landing pages.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Entertainment-VUD
-                                </div>
-                                <div class="project-name">
-                                    Beautiful media rendering website for your entertainment.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Portfolio-VUD
-                                </div>
-                                <div class="project-name">
-                                    Want an effective portfolio website, here it is.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Photography-VUD
-                                </div>
-                                <div class="project-name">
-                                    Reshape your dreams into your camera with superb websites.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Blogs and Other
-                                </div>
-                                <div class="project-name">
-                                    Start earning money with blogs and other type of websites.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
+<script src="plugins/flexslider/flexslider.config.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script src="js/jquery.cubeportfolio.min.js"></script>
+<script src="js/google-code-prettify/prettify.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Want something other than above??</h2>
-                <a href="#" class="btn btn-default btn-xl sr-button">Explore more website designs!</a>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>+91-7253919169</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:kumarmanojtyagi2000@gmail.com">kumarmanojtyagi2000@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container">
-          <div class="pull-right hidden-xs">
-            <b>Version 0.1.0 Beta</b>
-          </div>
-          <strong>Copyright &copy; 2019 | <a href="#">goodVUD WEB SOLUTIONS</a></strong>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
-
+	
 </body>
-
 </html>
